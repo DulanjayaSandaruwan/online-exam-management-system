@@ -9,5 +9,4 @@ public class OnlineExamManagementSystemBackEndApplication {
     public static void main(String[] args) {
         SpringApplication.run(OnlineExamManagementSystemBackEndApplication.class, args);
     }
-
 }
