@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /**
  * @author : D.D.Sandaruwan <dulanjayasandaruwan1998@gmail.com>
- * @Since : 03/09/2022
+ * @since : 03/09/2022
  **/
 
 @CrossOrigin
