@@ -28,6 +28,4 @@ public class AdminController {
         return new ResponseUtil(200,"Ok", adminService.searchAdmin(name));
     }
 
-
-
 }
