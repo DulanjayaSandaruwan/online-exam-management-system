@@ -1,5 +1,6 @@
 package com.onlineexammanagementsystembackend.dto;
 
+import com.onlineexammanagementsystembackend.entity.Subject;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -7,15 +8,27 @@ import lombok.ToString;
 
 /**
  * @author : D.D.Sandaruwan <dulanjayasandaruwan1998@gmail.com>
- * @since : 09/09/2022
+ * @since : 14/09/2022
  **/
 
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
 @Data
-public class AdminDTO {
+public class ExamDTO {
     private String id;
-    private String name;
-    private String password;
+
+    private Subject name;
+
+    private String desc;
+
+    private String date;
+
+    private String marks;
+
+    private String totalQuestion;
+
+    private String passMarks;
+
+    private String level;
 }

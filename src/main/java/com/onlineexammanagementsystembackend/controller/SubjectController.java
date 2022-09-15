@@ -25,7 +25,7 @@ public class SubjectController {
         return new ResponseUtil(200, "Save", null);
     }
 
-    //to add a new subject
+    //to delete a subject
     @DeleteMapping("/subject/{name}")
     public ResponseUtil deleteSubject(@PathVariable String name) {
         subjectService.deleteSubject(name);
