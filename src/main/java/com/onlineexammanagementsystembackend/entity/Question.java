@@ -11,7 +11,7 @@ import javax.persistence.ManyToOne;
 
 /**
  * @author : D.D.Sandaruwan <dulanjayasandaruwan1998@gmail.com>
- * @since : 14/09/2022
+ * @since : 16/09/2022
  **/
 
 @Entity
@@ -19,16 +19,18 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 @ToString
 @Data
-public class Exam {
+public class Question {
 
     @Id
     private String id;
-    private String description;
-    private String date;
-    private String marks;
-    private String totalQuestion;
-    private String passMarks;
-    private String marksLevel;
+    private String qname;
+    private String optionOne;
+    private String optionTwo;
+    private String optionThree;
+    private String optionFour;
+    private String answer;
     @ManyToOne
     private Subject sname;
+    @ManyToOne
+    private Exam ename;
 }
