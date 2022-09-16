@@ -20,20 +20,32 @@ import javax.persistence.ManyToOne;
 @NoArgsConstructor
 @ToString
 @Data
-public class Question {
+public class Result {
+
 
     @Id
     private String id;
-    private String qname;
-    private String optionOne;
-    private String optionTwo;
-    private String optionThree;
-    private String optionFour;
-    private String answer;
-    @ManyToOne
-    @JoinColumn(name= "subject_name")
-    private Subject sname;
+
+    private String status;
+
+    private String score;
+
+    private String edate;
+
+    private String totalMarks;
+
+    private String totalQuestion;
+
     @ManyToOne
     @JoinColumn(name= "exam_name")
-    private Exam ename;
+    private Subject sname;
+
+    @ManyToOne
+    @JoinColumn(name= "user_email")
+    private User email;
+
+    @ManyToOne
+    @JoinColumn(name= "exam_id")
+    private Exam examId;
+
 }
